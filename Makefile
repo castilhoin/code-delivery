@@ -13,3 +13,6 @@ clean:
 
 install:
 	pip3 install -e .['dev']
+
+test:
+	pytest tests/ -v
