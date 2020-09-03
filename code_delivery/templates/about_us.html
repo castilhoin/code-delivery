@@ -1,9 +1,8 @@
 {% extends 'base.html' %}
-{% import 'macros/card_list.html' as card_list %}
 
 {% block page_title %}
-Healthy Food Delivery: Your fitness meal in some minutes!
-{% endblock page_title %}
+About Us
+{% endblock %}
 
 {% block content %}
 
@@ -11,10 +10,10 @@ Healthy Food Delivery: Your fitness meal in some minutes!
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        Hero title
+        The Best Healthy Food Choice
       </h1>
       <h2 class="subtitle">
-        Hero subtitle
+        Your fitness meal in some minutes!
       </h2>
     </div>
   </div>
@@ -22,10 +21,8 @@ Healthy Food Delivery: Your fitness meal in some minutes!
 
 <section class="section">
   <div class="container">
-    <div class="columns">
-      {{ card_list.cards([1, 2, 3]) }}
-    </div>
+    <p>Food delivery application using Flask. Developed during the Flask course of the CodeShow Twitch channel.</p>
   </div>
 </section>
 
-{% endblock content %}
+{% endblock %}

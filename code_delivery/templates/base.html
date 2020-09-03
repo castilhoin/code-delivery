@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-  <title>{% block page_title %}{% endblock %} | CodeDelivery</title>
+  <title>{% block page_title %}{% endblock page_title %} | CodeDelivery</title>
 </head>
 <body>
   <header>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <strong>CodeDelivery</strong>
+        <a class="navbar-item" href="{{ url_for('site.index') }}">
+          <img src="/static/img/code-delivery-brand.svg">
         </a>
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMainMenu">
           <span aria-hidden="true"></span>
@@ -39,7 +39,7 @@
                 Become a Driver
               </a>
               <hr class="navbar-divider">
-              <a class="navbar-item" href="/about">
+              <a class="navbar-item" href="{{ url_for('site.about') }}">
                 About Us
               </a>
             </div>
@@ -61,7 +61,7 @@
     </nav>
   </header>
 
-  {% block content %}{% endblock %}
+  {% block content %}{% endblock content %}
 
   <footer class="footer">
     <div class="content has-text-centered">
