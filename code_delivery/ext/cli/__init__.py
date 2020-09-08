@@ -1,5 +1,5 @@
 from code_delivery.ext.db import db
-from code_delivery.ext.site import models
+from code_delivery.ext.db import models
 
 def init_app(app):
     @app.cli.command()
